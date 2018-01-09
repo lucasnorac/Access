@@ -7,19 +7,35 @@
 //
 
 import UIKit
-
+import ExternalAccess
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let myOpen = OpenClass()
+        myOpen.FaçaAlgoImplicito()
+        
+        let myPublic = PublicClass()
+        myPublic.FaçaAlgoImplicito()
+        
+        let myInternal = InternalClass()
+        myInternal.FaçaAlgoImplicito()
+        
+        let myImplicit = ImplictClass()
+        myImplicit.FaçaAlgoImplicito()
+        
+        //let myFilePrivate = FilePrivateClass()
+        
+        //let myPrivate = PrivateClass()
+        
+        //let myExOpen = ExternalOpenClass()
+        
+        //let myExPublic = ExternalPublicClass()
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
 }
 
